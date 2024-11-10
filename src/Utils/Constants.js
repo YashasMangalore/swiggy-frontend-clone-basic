@@ -8,3 +8,7 @@ export const CATEGORY_API2 =
   "&trackingId=c59b4316-bef8-462f-16af-9598ebd14713&submitAction=ENTER&queryUniqueId=5c59ed20-5a5c-02e3-e7fc-021a6cab6380";
 export const MENU_API =
   "https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=12.9715987&lng=77.5945627&restaurantId=";
+export const SEARCH_API1 =
+  "https://www.swiggy.com/dapi/restaurants/search/v3?lat=12.29890&lng=76.63940&str=";//same as category api
+export const SEARCH_API2 =
+  "&trackingId=c59b4316-bef8-462f-16af-9598ebd14713&submitAction=ENTER&queryUniqueId=5c59ed20-5a5c-02e3-e7fc-021a6cab6380";

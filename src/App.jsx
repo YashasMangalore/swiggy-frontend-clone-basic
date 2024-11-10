@@ -11,6 +11,7 @@ import { Provider } from 'react-redux';
 import store from './Utils/Store';
 import RestaurantMenu from './Components/RestaurantMenu';
 import Cart from './Components/Cart';
+import Search from './Components/Search';
 
 const App = () => {
   return (
@@ -27,6 +28,7 @@ const App = () => {
           <Route path="/showitems/:query" element={<ShowItemRestaurants />} />
           <Route path="/menu/:id" element={<RestaurantMenu />} />
           <Route path="/cart" element={<Cart />} />
+          <Route path="/search" element={<Search />} />
         </Routes>
       </div>
     </Provider>

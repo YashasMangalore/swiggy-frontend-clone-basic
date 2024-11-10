@@ -4,6 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import ImageSlider from "./ImageSlider";
 import RestaurantsList from "./RestaurantsList";
+import Shimmer from "./Shimmer";
 
 
 const Food = () => {
@@ -21,10 +22,17 @@ const Food = () => {
     getData()
   },[])
 
-  return <div>
-    <ImageSlider data={images} />
-    <RestaurantsList data={data} />
-  </div>;
+  return data.length ? (
+    <div>
+      <ImageSlider data={images} />
+      <RestaurantsList data={data} />
+    </div>
+  ) : (
+    <div>
+      <Shimmer />
+    </div>
+  );
+
 };
 
 export default Food;
