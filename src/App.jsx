@@ -1,7 +1,7 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
 import Landing from './Components/Landing'
-import Food from './Components/food';
+import Food from './Components/Food';
 import Restaurant from './Components/restaurant';
 import Grocery from './Components/grocery';
 import Random from './Components/random';
@@ -12,6 +12,8 @@ import store from './Utils/Store';
 import RestaurantMenu from './Components/RestaurantMenu';
 import Cart from './Components/Cart';
 import Search from './Components/Search';
+import About from './Components/About';
+import Contact from './Components/Contact';
 
 const App = () => {
   return (
@@ -29,6 +31,8 @@ const App = () => {
           <Route path="/menu/:id" element={<RestaurantMenu />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/search" element={<Search />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </div>
     </Provider>
